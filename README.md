@@ -2,21 +2,16 @@
 # WhatTheHash
 
 ```
-╔════════════════════════════════════════════════════════╗
-║                                                        ║
-║          ██╗    ██╗ █████╗ ██╗  ██╗███████╗            ║
-║          ██║    ██║██╔══██╗██║  ██║██╔════╝            ║
-║          ██║ █╗ ██║███████║███████║███████╗            ║
-║          ██║███╗██║██╔══██║██╔══██║╚════██║            ║
-║          ╚███╔███╝ ██║  ██║██║  ██║███████║            ║
-║           ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝            ║
-║                                                        ║
-║            WHAT THE HASH - Hash Identifier             ║
-║                                                        ║
-╚════════════════════════════════════════════════════════╝
+          ██╗    ██╗ █████╗ ██╗  ██╗███████╗    
+          ██║    ██║██╔══██╗██║  ██║██╔════╝    
+          ██║ █╗ ██║███████║███████║███████╗    
+          ██║███╗██║██╔══██║██╔══██║╚════██║    
+          ╚███╔███╝ ██║  ██║██║  ██║███████║    
+           ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    
+            WHAT THE HASH - Hash Identifier     
 ```
 
-> *Fast, lightweight hash type identifier. Give it a hash string, get back possible hash types.*
+> *Because staring at 32 hex chars isn't a strategy.*
 
 
 ## Installation
@@ -108,15 +103,3 @@ $ python whatthehash.py -s '$2b$12$eImiTXuWVxfaHNYY0iNAseK2kIrt8E8/65cuT0jVmYGEu
 Possible hash types:
   - Bcrypt
 ```
-
-## How It Works
-
-WhatTheHash uses regex patterns to match hash strings against known hash formats. The tool:
-
-1. Takes a hash string as input
-2. Tests it against all known hash patterns
-3. Returns all matching hash types
-4. Displays results in a clean, organized format
-
-Since many hashes have the same length or format, multiple matches are common. Use additional context (where the hash came from, what algorithm was used) to narrow down the actual type.
-
